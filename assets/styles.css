@@ -1,0 +1,78 @@
+/* Colores Variables */
+:root {
+    --black: #000000;
+    --black-transparent:#00000080;
+    --white: #fff;
+    --grey:#cccccc;
+    --grey-dark:#3f3f3f;
+}
+img{
+    width:40%;
+}
+
+
+
+/* skills */
+.skills-elements{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    width: 400px;
+    height: 150px;
+    background-color: red;
+    padding: 20px;
+}
+/*  html    css     javascrip   react
+    git     github  nodes       redux
+    python  vacio   vacio       vacio
+*/
+.skill-element{
+    width: 80px;
+    height: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--grey);
+    color: var(--grey-dark);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    position: relative;
+}
+.skill-element > span{
+    margin-right: 0px;
+    transition: all 0.9s ease-in-out;
+}
+.skill-element:hover > span {
+    margin-right: -170px;
+}
+
+.skill-element > img {
+    width: 35px;
+    position: absolute;
+    top: 50%;
+    left: 200%;
+    transform: translate(-50%, -50%);
+    transition: all 0.9s ease-in-out;
+}
+
+.github{
+    height: 30px;
+    width: 40px;
+    
+}
+
+.skill-element:hover > img {
+    left: 50%;
+}
+
+.python{
+    grid-row: 3;
+    grid-column: 2 / 3;
+    margin-left: 50px;
+}
+
+.python >img{
+    margin-left: -0px;
+}

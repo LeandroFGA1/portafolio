@@ -4,95 +4,230 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/logo/perrito-short-border.png" type="image/x-icon">
     <title>Document</title>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo-container">
-                <!-- <img src="" alt=""> -->
+                <img src="./assets/images/logo/dog-short-border.png" alt="yorkshire dog" class="dog--logo">
+                <span>LFGA  developer</span>
             </div>
-            <ul>
+            <ul class="navbar">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#">Skills</a>
+                    <a href="#skills">Skills</a>
                 </li>
                 <li>
-                    <a href="#">Projects</a>
+                    <a href="#projects">Projects</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="home">
             <div class="hero-text-container">
                 <h1>I am Leandro Aucache</h1>
                 <p>A Frontend focused Web Developer in a constant learning process.</p>
             </div>
             
         </section>
-        <section class="about">
-            <h2>Greetings to the community!</h2>
-            <p>
-                I'm a web development enthusiast, just starting out in the frontend world. My passion lies in building the visible face of websites and applications, thus contributing to the overall success of the product. Feel free to take a look at my first projects in the corresponding section.
-            </p>
-            <p>
-                I'm looking for job opportunities where I can contribute, learn and grow. If you know of an opportunity that aligns with my skills and energy, don't hesitate to contact me.
-            </p>
-        </section>
-        <section class="skills">
-            <div class="skills-elements">
-                <div class="skill-element">
-                    <span>HTML</span>
-                    <img src="./assets/images/skills/html-5.png"  alt="html">
+        <div class="about-skill">
+            <section class="about" id="about">
+                <h2>Greetings to the community!</h2>
+                <p>
+                    I'm a web development enthusiast, just starting out in the frontend world. My passion lies in building the visible face of websites and applications, thus contributing to the overall success of the product. Feel free to take a look at my first projects in the corresponding section.
+                </p>
+                <p>
+                    I'm looking for job opportunities where I can contribute, learn and grow. If you know of an opportunity that aligns with my skills and energy, don't hesitate to contact me.
+                </p>
+            </section>
+            <section class="skills" id="skills">
+                <h2>My Skills</h2>
+                <div class="skills-elements">
+                    <div class="skill-element">
+                        <span>HTML</span>
+                        <img src="./assets/images/skills/html-5.png"  alt="html">
+                    </div>
+                    <div class="skill-element">
+                        <span>CSS</span>
+                        <img src="./assets/images/skills/css-3.png"  alt="css">
+                    </div>
+                    <div class="skill-element">
+                        <span>JavaScript</span>
+                        <img src="./assets/images/skills/js.png" alt="JavaScript">
+                    </div>
+                    <div class="skill-element">
+                        <span>React</span>
+                        <img src="./assets/images/skills/react.svg" alt="react">
+                    </div>
+                    <div class="skill-element">
+                        <span>Git</span>
+                        <img src="./assets/images/skills/git.svg" alt="git">
+                    </div>
+                    <div class="skill-element">
+                        <span>GitHub</span>
+                        <img class="github" src="./assets/images/skills/github.png" alt="github">
+                    </div>
+                    <div class="skill-element">
+                        <span>Nodejs</span>
+                        <img src="./assets/images/skills/nodejs.png" alt="nodejs">
+                    </div>
+                    <div class="skill-element">
+                        <span>redux</span>
+                        <img src="./assets/images/skills/redux.svg" alt="react redux">
+                    </div>
+                    <!-- <div class="skill-element python">
+                        <span>Python</span>
+                        <img src="./assets/images/skills/python.svg" alt="Python">
+                    </div> -->
                 </div>
-                <div class="skill-element">
-                    <span>CSS</span>
-                    <img src="./assets/images/skills/css-3.png"  alt="css">
+                <div class="skill-learning-container">
+                    <h3>Skill Learning</h3>
+                    <div class="skill-learning">
+                        <div class="skill-element skill-learning">
+                            <span>Angular</span>
+                            <img src="./assets/images/skills/learning/angular-icon.svg" alt="angular framework">
+                        </div>
+                        <div class="skill-element skill-learning">
+                            <span>Express</span>
+                            <img src="./assets/images/skills/learning/express.png" alt=" express framework">
+                        </div>
+                        <div class="skill-element skill-learning">
+                            <span>Typescript</span>
+                            <img src="./assets/images/skills/learning/typescript.svg" alt="typescript">
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-element">
-                    <span>JavaScript</span>
-                    <img src="./assets/images/skills/js.png" alt="JavaScript">
+                <div class="languages">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>
+                            spanish: native
+                        </li>
+                        <li>
+                            english: a2
+                            <span><a href="#">credentials</a></span>
+                        </li>
+                        <li>
+                            italian: a1
+                        </li>
+                    </ul>
                 </div>
-                <div class="skill-element">
-                    <span>React</span>
-                    <img src="./assets/images/skills/react.svg" alt="react">
+            </section>
+        </div>
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project dota-2">
+                    <div class="project-text">
+                        <h3>Dota 2 replic</h3>
+                        <p>I have tried to recreate the home page of the DOTA 2 video game, with some modifications as I noticed that the page is broken in some resolutions. I have also adapted it because it has assets that are not available to the public.</p>
+                        <div class="project-view">
+                            <a href="#">
+                                <span>View Code</span>
+                            </a>
+                            <a href="#">
+                                <span>View Page</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-preview">
+                        <img src="./assets/images/image-not-found.jpg" alt="">
+                    </div>
+                    
                 </div>
-                <div class="skill-element">
-                    <span>Git</span>
-                    <img src="./assets/images/skills/git.svg" alt="git">
+                <div class="project game-shop">
+                    <div class="project-text">
+                        <h3>game shop</h3>
+                        <p>Welcome to my video game e-commerce mockup project, an experience designed with technical precision and attention to detail. Inspired by leading platforms such as GOG and Steam, this mockup offers a polished and easy-to-navigate user interface, prioritising usability and efficiency.</p>
+                        <div class="project-view">
+                            <a href="#">
+                                <span>View Code</span>
+                            </a>
+                            <a href="#">
+                                <span>View Page</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-preview">
+                        <img src="./assets/images/image-not-found.jpg" alt="">
+                    </div>
                 </div>
-                <div class="skill-element">
-                    <span>GitHub</span>
-                    <img class="github" src="./assets/images/skills/github.png" alt="github">
-                </div>
-                <div class="skill-element">
-                    <span>Nodejs</span>
-                    <img src="./assets/images/skills/nodejs.png" alt="nodejs">
-                </div>
-                <div class="skill-element">
-                    <span>redux</span>
-                    <img src="./assets/images/skills/redux.svg" alt="react redux">
-                </div>
-                <div class="skill-element python">
-                    <span>Python</span>
-                    <img src="./assets/images/skills/python.svg" alt="Python">
+                <div class="project psychologist-web">
+                    <div class="project-text">
+                        <h3>psychologist's professional page</h3>
+                        <p>A psychologist's virtual page, a platform designed to publicise her specialities, professional career, places of work and contact details. It is designed so that visitors can quickly get an idea of the psychologist's profile and contact her.</p>
+                        <div class="project-view">
+                            <a href="#">
+                                <span>View Code</span>
+                            </a>
+                            <a href="#">
+                                <span>View Page</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-preview">
+                        <img src="./assets/images/image-not-found.jpg" alt="">
+                    </div>
                 </div>
             </div>
+            <div class="future-projects">
+                <span>
+                    ✨✨✨and there are more projects in production✨✨✨
+                </span>
+            </div>
+            <!-- <div class="project-in-production">
+                <h3>projects in production / design</h3>
+                <div class="project-production-container">
+                    <span>react hook and its usefulness</span>
+                    <span>animal day care</span>
+                    <span>technical information</span>
+                </div>
+            </div> -->
             
         </section>
-        <section class="projects"></section>
-        <section class="contact"></section>
-
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me via LinkedIn or email:</p>
+            <div class="contact-links">
+                <div class="contact-link">
+                    <a href="https://www.linkedin.com/in/leandro-aucache-870465281/" target="_blank">
+                        <img src="./assets/images/contact/linkedin.png" alt="LinkedIn Icon">
+                        <span>
+                            LinkedIn Profile
+                        </span>
+                    </a>
+                </div>
+                <div class="contact-link">
+                    <a href="mailto:aucache.leandro@gmail.com?Subject=Consult">
+                        <img src="./assets/images/contact/gmail.png" alt="Email Icon">
+                        <span>
+                            Email Me
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 LFGA Developer. All rights reserved.</p>
+        </div>
+    </footer>
+    
     
 </body>
 </html>
